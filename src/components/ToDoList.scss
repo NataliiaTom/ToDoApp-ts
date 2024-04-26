@@ -1,0 +1,83 @@
+$primary-base-color: #633a82;
+$primary-dark-color: #3a2a47;
+$secondary-base-color: #f77995;
+$secondary-dark-color: #f56c87;
+$background-color: #f1f1f1;
+$white-color: #fff;
+$text-light-color: #bbb;
+$text-color: #525252;
+
+$fa-font-path: "~font-awesome/fonts";
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: $white-color;
+
+    input {
+        flex: 1;
+        height: 2.5rem;
+        background-color: $background-color;
+        border-radius: 0.2rem;
+        padding: 0 1rem;
+        font-size: 1rem;
+        color: #666;
+        border: 0;
+        outline-color: $text-light-color;
+    }
+
+    ::placeholder {
+        opacity: 0.5;
+    }
+
+    button {
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: $secondary-base-color;
+        color: $white-color;
+        margin-left: 1rem;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary-dark-color;
+        }
+    }
+
+}
+
+.addedElements {
+
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: $primary-base-color;
+        color: $white-color;
+        margin-left: 1rem;
+        border: 0;
+        border-radius: 50%;
+        box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $primary-dark-color;
+        }
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 4rem;
+        color: $text-color;
+        margin: 0 1.2rem;
+    }
+}
